@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patologia Oral - Estudo Avançado</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/background-effects.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Efeitos de fundo -->
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+    
+    <div class="wave-background">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
+    
+    <div class="content-overlay">
+    <!-- Header Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-microscope"></i>
+                <span>PATOLOGIA ORAL</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link">Início</a></li>
+                <li><a href="#especialidades" class="nav-link">Especialidades</a></li>
+                <li><a href="#resumos" class="nav-link">Resumos</a></li>
+                <li><a href="#questoes" class="nav-link">Questões</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- IA DON_FBBR -->
+    <div class="ai-assistant" id="donFbbr">
+        <div class="ai-avatar">
+            <img src="images/don_fbbr_robot.png" alt="DON_FBBR Robot" class="robot-avatar">
+            <div class="ai-pulse"></div>
+        </div>
+        <div class="ai-chat" id="aiChat">
+            <div class="ai-header">
+                <h3>DON_FBBR</h3>
+                <p>Assistente de Patologia IA</p>
+                <button class="ai-close" id="aiClose">&times;</button>
+            </div>
+            <div class="ai-messages" id="aiMessages">
+                <div class="ai-message">
+                    <p>Olá! Sou o DON_FBBR, seu assistente especializado em patologia oral. Como posso ajudá-lo hoje?</p>
+                </div>
+            </div>
+            <div class="ai-input">
+                <input type="text" id="aiInput" placeholder="Digite sua pergunta...">
+                <button id="aiSend"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-background">
+            <div class="hero-particles"></div>
+            <div class="hero-grid"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">PATOLOGIA</span>
+                    <span class="title-line">ORAL</span>
+                    <span class="title-subtitle">Estudo Avançado & Interativo</span>
+                </h1>
+                <p class="hero-description">
+                    Domine os conceitos fundamentais da patologia oral com conteúdo 
+                    científico atualizado, casos clínicos reais e inteligência artificial integrada.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Especialidades</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">Casos Clínicos</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">IA Disponível</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('especialidades')">
+                        <i class="fas fa-rocket"></i>
+                        Começar Estudos
+                    </button>
+                    <button class="btn btn-secondary" onclick="toggleAI()">
+                        <i class="fas fa-robot"></i>
+                        Falar com IA
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-hologram">
+                    <img src="images/patologia_hero.jpg" alt="Patologia Oral" class="hero-image">
+                    <div class="hologram-overlay"></div>
+                    <div class="scan-lines"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Especialidades Section -->
+    <section id="especialidades" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Especialidades</h2>
+                <p class="section-subtitle">Foco em Patologia Oral Avançada</p>
+            </div>
+            <div class="specialties-grid">
+                <div class="specialty-card" data-specialty="lesoes">
+                    <div class="specialty-image">
+                        <img src="images/lesoes_orais.jpg" alt="Lesões Fundamentais">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>Lesões Fundamentais</h3>
+                        <p>Classificação e características das lesões elementares, proliferativas e degenerativas da cavidade oral</p>
+                        <div class="specialty-topics">
+                            <span class="topic-tag">Mácula</span>
+                            <span class="topic-tag">Pápula</span>
+                            <span class="topic-tag">Úlcera</span>
+                        </div>
+                        <div class="card-progress">
+                            <div class="progress-bar" style="width: 85%"></div>
+                            <span class="progress-text">85% Completo</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="card-btn primary" onclick="openSpecialty('lesoes')">
+                                <i class="fas fa-search-plus"></i> Explorar
+                            </button>
+                            <button class="card-btn secondary" onclick="downloadPDF('lesoes_fundamentais.pdf')">
+                                <i class="fas fa-file-download"></i> PDF
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="specialty-card" data-specialty="diagnostico">
+                    <div class="specialty-image">
+                        <img src="images/diagnostico_diferencial.jpg" alt="Diagnóstico Diferencial">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <i class="fas fa-stethoscope"></i>
+                        </div>
+                        <h3>Diagnóstico Diferencial</h3>
+                        <p>Metodologia diagnóstica para lesões brancas, vermelhas e pigmentadas da mucosa oral</p>
+                        <div class="specialty-topics">
+                            <span class="topic-tag">Leucoplasia</span>
+                            <span class="topic-tag">Eritroplasia</span>
+                            <span class="topic-tag">Líquen Plano</span>
+                        </div>
+                        <div class="card-progress">
+                            <div class="progress-bar" style="width: 70%"></div>
+                            <span class="progress-text">70% Completo</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="card-btn primary" onclick="openSpecialty('diagnostico')">
+                                <i class="fas fa-search-plus"></i> Explorar
+                            </button>
+                            <button class="card-btn secondary" onclick="downloadPDF('introducao_patologia_oral.pdf')">
+                                <i class="fas fa-file-download"></i> PDF
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="specialty-card" data-specialty="biopsia">
+                    <div class="specialty-image">
+                        <img src="images/biopsia_tecnicas.jpg" alt="Biópsia e Técnicas">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <i class="fas fa-cut"></i>
+                        </div>
+                        <h3>Biópsia e Técnicas</h3>
+                        <p>Técnicas de biópsia, processamento histopatológico e métodos diagnósticos complementares</p>
+                        <div class="specialty-topics">
+                            <span class="topic-tag">Incisional</span>
+                            <span class="topic-tag">Excisional</span>
+                            <span class="topic-tag">Imuno-histoquímica</span>
+                        </div>
+                        <div class="card-progress">
+                            <div class="progress-bar" style="width: 60%"></div>
+                            <span class="progress-text">60% Completo</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="card-btn primary" onclick="openSpecialty('biopsia')">
+                                <i class="fas fa-search-plus"></i> Explorar
+                            </button>
+                            <button class="card-btn secondary" onclick="downloadPDF('biopsia_tecnicas.pdf')">
+                                <i class="fas fa-file-download"></i> PDF
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resumos Section -->
+    <section id="resumos" class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Resumos Científicos</h2>
+                <p class="section-subtitle">Conteúdo estruturado e atualizado</p>
+            </div>
+            <div class="summary-grid">
+                <div class="summary-card">
+                    <div class="summary-header">
+                        <i class="fas fa-file-medical"></i>
+                        <h3>Lesões e Diagnóstico</h3>
+                    </div>
+                    <div class="summary-content">
+                        <ul class="summary-list">
+                            <li><i class="fas fa-check"></i> Lesões Elementares</li>
+                            <li><i class="fas fa-check"></i> Diagnóstico Diferencial</li>
+                            <li><i class="fas fa-check"></i> Lesões Pré-malignas</li>
+                            <li><i class="fas fa-check"></i> Manifestações Orais</li>
+                        </ul>
+                        <button class="summary-btn" onclick="openPDF('lesoes')">
+                            <i class="fas fa-eye"></i> Visualizar
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="summary-card">
+                    <div class="summary-header">
+                        <i class="fas fa-microscope"></i>
+                        <h3>Técnicas Diagnósticas</h3>
+                    </div>
+                    <div class="summary-content">
+                        <ul class="summary-list">
+                            <li><i class="fas fa-check"></i> Biópsia Incisional</li>
+                            <li><i class="fas fa-check"></i> Biópsia Excisional</li>
+                            <li><i class="fas fa-check"></i> Imuno-histoquímica</li>
+                            <li><i class="fas fa-check"></i> Citologia Esfoliativa</li>
+                        </ul>
+                        <button class="summary-btn" onclick="openPDF('tecnicas')">
+                            <i class="fas fa-eye"></i> Visualizar
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="summary-card">
+                    <div class="summary-header">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Neoplasias e Infecções</h3>
+                    </div>
+                    <div class="summary-content">
+                        <ul class="summary-list">
+                            <li><i class="fas fa-check"></i> Carcinoma Espinocelular</li>
+                            <li><i class="fas fa-check"></i> Neoplasias Benignas</li>
+                            <li><i class="fas fa-check"></i> Infecções Virais</li>
+                            <li><i class="fas fa-check"></i> Doenças Sistêmicas</li>
+                        </ul>
+                        <button class="summary-btn" onclick="openPDF('neoplasias')">
+                            <i class="fas fa-eye"></i> Visualizar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Questões Section -->
+    <section id="questoes" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Questões & Casos Clínicos</h2>
+                <p class="section-subtitle">Teste seus conhecimentos com casos reais</p>
+            </div>
+            <div class="questions-container">
+                <div class="question-categories">
+                    <button class="category-btn active" data-category="all">Todas</button>
+                    <button class="category-btn" data-category="lesoes">Lesões</button>
+                    <button class="category-btn" data-category="diagnostico">Diagnóstico</button>
+                    <button class="category-btn" data-category="biopsia">Biópsia</button>
+                    <button class="category-btn" data-category="neoplasias">Neoplasias</button>
+                </div>
+                
+                <div class="questions-grid" id="questionsGrid">
+                    <!-- As questões serão carregadas dinamicamente via JavaScript -->
+                </div>
+                
+                <div class="load-more">
+                    <button class="btn btn-outline" id="loadMoreQuestions">
+                        <i class="fas fa-plus"></i> Carregar Mais Questões
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contato</h2>
+                <p class="section-subtitle">Você pode nos contatar através dos seguintes meios:</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Endereço</h3>
+                            <p>Av. Alberto Passos, 294 - Centro<br>Cruz das Almas - BA, 44380-000</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Telefone</h3>
+                            <p>(75) 3017-0879<br>(75) 98823-4776</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>rlambaia2023@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Horário de Atendimento</h3>
+                            <p>Segunda a Sexta: 8h às 18h<br>Sábado: 8h às 12h</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-map">
+                    <h3>Localização</h3>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3895.5234567890123!2d-39.1234567!3d-12.6789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sAv.%20Alberto%20Passos%2C%20294%20-%20Centro%2C%20Cruz%20das%20Almas%20-%20BA%2C%2044380-000!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr"
+                            width="100%" 
+                            height="300" 
+                            style="border:0; border-radius: 10px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nossa Equipe Section -->
+    <section id="equipe" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nossa Equipe</h2>
+                <p class="section-subtitle">Conheça os profissionais que tornam este projeto possível</p>
+            </div>
+            
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="images/Dani.jpg" alt="Daniella Carvalho">
+                    </div>
+                    <div class="member-info">
+                        <h3>Daniella Carvalho Gomes de Cerqueira</h3>
+                        <p class="member-role">Coordenação dos cursos de saúde FBBR</p>
+                        <p class="member-description">Responsável pela coordenação e desenvolvimento dos cursos de saúde da instituição.</p>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="images/felipe.jpg" alt="Dr. Felipe Jesus">
+                    </div>
+                    <div class="member-info">
+                        <h3>Dr. Felipe Jesus</h3>
+                        <p class="member-role">Coordenador do curso de Odontologia e Colaborador</p>
+                        <p class="member-description">A sua ideia "Vamos" foi o start. Gratidão sempre.</p>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="images/paulo_ricardo_real.jpg" alt="Dr. Paulo Ricardo Carvalho dos Santos">
+                    </div>
+                    <div class="member-info">
+                        <h3>Dr. Paulo Ricardo Carvalho dos Santos</h3>
+                        <p class="member-role">Professor de Patologia Oral-FBBR</p>
+                        <p class="member-description">Especialista em Patologia Oral, responsável pelo desenvolvimento do conteúdo científico e coordenação acadêmica da disciplina.</p>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="images/harrison.JPG" alt="Harrison R. Costa">
+                    </div>
+                    <div class="member-info">
+                        <h3>Harrison R. Costa</h3>
+                        <p class="member-role">Desenvolvedor e Estudante</p>
+                        <p class="member-description">Desenvolvedor e Estudante da Instituição em Odontologia-FBBR</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Patologia Oral</h3>
+                    <p>Plataforma avançada de estudos em patologia oral com IA integrada e conteúdo científico atualizado.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#especialidades">Especialidades</a></li>
+                        <li><a href="#resumos">Resumos</a></li>
+                        <li><a href="#questoes">Questões</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Recursos</h3>
+                    <ul>
+                        <li><a href="#">PDFs Especializados</a></li>
+                        <li><a href="#">Casos Clínicos</a></li>
+                        <li><a href="#">IA PATHO_AI</a></li>
+                        <li><a href="#">Suporte</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Patologia Oral - Harrison Costa. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    </div> <!-- Fim content-overlay -->
+
+    <!-- Scripts -->
+    <script src="js/pdf-advanced.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
